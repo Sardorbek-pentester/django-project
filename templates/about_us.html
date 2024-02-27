@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for projects in object_list %}
+
+    <a href="{% url 'datail' projects.pk %}"><h1>{{ projects.project_name }}</h1><br></a>
+
+    {% endfor %}
+{% endblock content %}

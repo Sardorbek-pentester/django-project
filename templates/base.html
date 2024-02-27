@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rashidof23</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        /* Core styles */
+
+        body{
+            font-family: sans-serif;
+        }
+
+        .container{
+            width: 1140px;
+            margin: 0 auto;
+        }
+
+        .clearfix{
+            clear: both;
+        }
+
+        /* Home header styles */
+
+        .home-header__brand{
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .home-header__brand img{
+            width: 50px;
+        }
+
+        .home-navigation{
+            display: inline-block;
+            vertical-align: middle;
+            padding-left: 200px;
+        }
+
+        .home-navigation__item{
+            display: inline-block;
+            padding: 20px;
+        }
+
+        .home-navigation__item a{
+            color: rgba(0, 0, 0, 0.74);
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .home-navigation__item a:hover{
+            color: rgb(255, 0, 170);
+        }
+
+        .home-navigation__item.free_audit a{
+            background-color: rgb(93, 2, 123);
+            color: white;
+            border-radius: 40px;
+            padding:10px 25px;
+        }
+
+        .home-navigation__item.free_audit a:hover{
+            background-color: rgb(165, 4, 219);
+            color: white;
+        }
+
+        /* Home section1 */
+
+        .home-section1{
+            padding: 30px 20px;
+        }
+
+        .home-section1 > div{
+            width: 50%;
+            float: left;
+        }
+
+        .home-section1__image img{
+            text-align: right;
+            width: 630px;
+            height: 530px;
+            
+        }
+
+        .home-section1__content1{
+            font-size: 70px;
+            font-weight: 400;
+            color: darkslategrey;
+        }
+
+        .home-section1__content2{
+            font-size: 18px;
+            color: rgb(255, 2, 141);
+            font-weight: bold;
+        }
+
+        .home-section1__content3{
+            font-size: 18px;
+            color: darkslategrey;
+            padding-top: 12px;
+            padding-bottom: 18px;
+            letter-spacing: 1px;
+        }
+
+        .home-section1__content4{
+            background-color: rgb(93, 2, 123);
+            color: white;
+            text-decoration: none;
+            border-radius: 40px;
+            padding:15px 30px;
+            letter-spacing: 1px;
+        }
+
+        .home-section1__content4:hover{
+            background-color: rgb(165, 4, 219);
+        }
+
+        /* Home section1 partners */
+
+        .home-section1__partners{
+            padding-top: 50px;
+            text-align: center;
+            font-size: 23px;
+            color: darkslategrey;
+        }
+
+        .home-section1__partners__items img{
+            padding-right: 50px;
+        }
+
+        /* Home section2 */
+
+        .home-section2 > div{
+            width: 50%;
+            float: left;
+        }
+
+        .home-section2__content1{
+            color: rgb(93, 2, 123);
+            text-align: center;
+            font-size: 40px;
+            padding-top: 30px;
+        }
+
+        .home-section2__content2{
+            color: rgba(24, 50, 50, 0.833);
+            font-size: 30px;
+        }
+
+        .home-section2__content3{
+            font-size: 18px;
+            color: rgba(0, 0, 0, 0.87);
+        }
+
+        .home-section2__item{
+            color: rgb(93, 2, 123);
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+
+        .home-section2__items{
+            padding-bottom: 18px;
+        }
+
+        .home-section2__content4{
+            background-color: rgb(93, 2, 123);
+            color: white;
+            text-decoration: none;
+            border-radius: 40px;
+            padding:15px 30px;
+            letter-spacing: 1px;
+            font-size: 18px;
+        }
+
+        .home-section2__content4:hover{
+            background-color: rgb(165, 4, 219);
+        }
+
+        .home-section2__image{
+            text-align: center;
+        }
+
+        /* Home section3 */
+
+        .home-section3 > div{
+            width: 50%;
+            float: left;
+        }
+
+        .home-section3__image{
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .home-section3__content1{
+            color: rgba(24, 50, 50, 0.833);
+            font-size: 30px;
+        }
+
+        .home-section3__content2{
+            font-size: 18px;
+            color: rgba(0, 0, 0, 0.87);
+            padding-bottom: 18px;
+        }
+
+        .home-section3__content3{
+            background-color: rgb(93, 2, 123);
+            color: white;
+            text-decoration: none;
+            border-radius: 40px;
+            padding:15px 30px;
+            letter-spacing: 1px;
+            font-size: 18px;
+            padding-bottom: px;
+        }
+
+        .home-section3__content3:hover{
+            background-color: rgb(165, 4, 219);
+        }
+
+        /* Home section4 */
+
+        .home-section4 > div{
+            width: 50%;
+            float: left;
+        }
+
+        .home-section4__image{
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .home-section4__content1{
+            color: rgba(24, 50, 50, 0.833);
+            font-size: 30px;
+            padding-top: 18px;
+        }
+
+        .home-section4__content2{
+            font-size: 18px;
+            color: rgba(0, 0, 0, 0.87);
+            padding-bottom: 18px;
+        }
+
+        .home-section4__content3{
+            background-color: rgb(93, 2, 123);
+            color: white;
+            text-decoration: none;
+            border-radius: 40px;
+            padding:15px 30px;
+            letter-spacing: 1px;
+            font-size: 18px;
+        }
+
+        .home-section4__content3:hover{
+            background-color: rgb(165, 4, 219);
+        }
+
+        /* Home section5 */
+
+        .home-section5 > div{
+            width: 50%;
+            float: left;
+        }
+
+        .home-section5__image img{
+            text-align: center;
+            padding-top: 30px;
+            width: 300px;
+            height: 300px;
+        }
+
+        .home-section5__content1{
+            color: rgba(24, 50, 50, 0.833);
+            font-size: 30px;
+        }
+
+        .home-section5__content2{
+            font-size: 18px;
+            color: rgba(0, 0, 0, 0.87);
+            padding-bottom: 18px;
+        }
+
+        .home-section5__content3{
+            background-color: rgb(93, 2, 123);
+            color: white;
+            text-decoration: none;
+            border-radius: 40px;
+            padding:15px 30px;
+            letter-spacing: 1px;
+            font-size: 18px;
+            padding-bottom: px;
+        }
+
+        .home-section5__content3:hover{
+            background-color: rgb(165, 4, 219);
+        }
+
+        /* Home section6 */
+
+        .home-section6 > div{
+            width: 100%;
+            float: left;
+        }
+
+        .home-section6{
+            width: 700px;
+            text-align: center;
+        }
+
+        .home-section6__text{
+            height: 200px;
+            text-align: center;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+    <div class="container">
+        <header class="home-header">
+            <div class="home-header__brand">
+                <a href="{% url 'home' %}">
+                    <img src="./static/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <nav class="home-navigation">
+                <ul class="home-navigation__items">
+                    <li  class="home-navigation__item">
+                        <a href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="home-navigation__item">
+                        <a href="{% url 'content_strategy' %}">Content Strategy</a>
+                    </li>
+                    <li class="home-navigation__item">
+                        <a href="{% url 'content_creation' %}">Content Creation</a>
+                    </li>
+                    <li class="home-navigation__item">
+                        <a href="{% url 'about_us' %}">About Us</a>
+                    </li>
+                    <li class="home-navigation__item">
+                        <a href="{% url 'blog' %}">Blog</a>
+                    </li>
+                    <li class="home-navigation__item free_audit">
+                        <a href="{% url 'free_audit' %}">Free Audit</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <!-- /Header section -->
+    {% block content %}
+    {% endblock content %}
+
+    <footer style="background-color: rgb(18, 17, 17); font-size: 20px; color: red; text-align: center; height: 100px; margin-top: 1px; line-height: 100px; float: left; width: 100%;">
+        <p>Bu footer qismi.
+        </p>
+    </footer>
+
+</body>
+</html>

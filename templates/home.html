@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosh sahifa</title>
+</head>
+<body>
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- Home section1 -->
+    <div class="container">
+        <section id="home-section1" class="home-section1">
+            <div class="home-section1__text">
+                <h1 class="home-section1__content1">
+                  A content marketing agency that drives sales.
+                </h1>  
+                <p class="home-section1__content2">
+                  Scribly is a content marketing agency that helps you boost traffic, generate leads, and increase your bottom line.
+                </p>
+                <p class="home-section1__content3">
+                  With our end-to-end service, we take care of everything from content audits and strategy to content creation and management across websites, blogs, socials, and email.
+                </p>
+                <a href="{% url 'free_audit' %}" class="home-section1__content4">
+                  Qualify for a FREE content audit today
+                </a>
+            </div>
+            <div class="home-section1__image">
+                <img src="./images/other1.png" alt="png">
+            </div>
+        </section>
+
+        <div class="clearfix"></div>
+  
+        <div class="container">
+            <section class="home-section1__partners">
+                <div class="home-section1__partners__items">
+                    <p>A CONTENT MARKETING AGENCY TRUSTED BY BUSINESSES AROUND THE WORLD</p>
+                    <img src="./images/hamkor1.png" alt="partner1">
+                    <img src="./images/hamkor2.png" alt="partner2">
+                    <img src="./images/hamkor3.png" alt="partner3">
+                    <img src="./images/hamkor4.png" alt="partner4">
+                    <img src="./images/hamkor5.png" alt="partner5">
+                    <img src="./images/hamkor6.png" alt="partner6">
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- /Home section1 -->
+
+{% endblock content %}
+
+</body>
+</html>
